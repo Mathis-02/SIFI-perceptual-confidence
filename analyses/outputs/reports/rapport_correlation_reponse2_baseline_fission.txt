@@ -1,0 +1,12 @@
+Corrélations entre le taux de réponse « 2 flashs » dans A1V1
+et le taux d'illusion de fission dans A1V1_A2
+
+# A tibble: 6 × 6
+  analyse       methode      n estimation statistique p_value
+  <fct>         <chr>    <int>      <dbl>       <dbl>   <dbl>
+1 SOA regroupés Spearman     9      0.218      93.9     0.574
+2 SOA regroupés Pearson      9     -0.196      -0.528   0.614
+3 SOA standard  Spearman     9      0.286      85.7     0.456
+4 SOA standard  Pearson      9     -0.189      -0.510   0.626
+5 SOA court     Spearman     9      0.251      89.9     0.515
+6 SOA court     Pearson      9     -0.189      -0.511   0.625

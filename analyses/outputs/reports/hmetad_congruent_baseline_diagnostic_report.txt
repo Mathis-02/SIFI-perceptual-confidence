@@ -1,0 +1,23 @@
+HMeta-d — contrôle congruent A1V1 vs A1V1_A2V2
+===================
+
+Participants : 9
+SOA de A1V1_A2V2 : short
+Essais : 1944
+Méthode de discrétisation : participant_quantiles
+Nombre de catégories de confiance : 4
+
+Divergences : 19
+Rhat maximal : 1.0034
+ESS bulk minimal : 1669.2
+ESS tail minimal : 2629.7
+
+M-ratio moyen postérieur : 0.661
+IC crédible 95 % du M-ratio : [0.440, 0.914]
+P(M-ratio > 1) : 0.008
+
+Interprétation diagnostique recommandée :
+- aucune divergence ;
+- Rhat <= 1.01 ;
+- ESS suffisamment élevés ;
+- inspection visuelle des chaînes.

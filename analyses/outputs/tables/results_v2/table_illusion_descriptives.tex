@@ -1,0 +1,22 @@
+\begin{table}[ht]
+\centering
+\caption{Taux d’illusion observés et probabilités prédites par le modèle selon le type d’illusion et le SOA.}
+\label{tab:illusion_descriptives_v2}
+\footnotesize
+\begin{tabular}{llrrr}
+\toprule
+Type d’illusion & SOA & N & Observé (\%) & Prédit par GLMM (\%) \\
+\midrule
+Fission & Standard & 7 & 35.1 & 34.0 \\
+Fission & Court & 7 & 49.2 & 51.8 \\
+Fusion & Standard & 7 & 18.5 & 13.5 \\
+Fusion & Court & 7 & 58.1 & 62.4 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{minipage}{0.92\textwidth}
+\footnotesize
+\textit{Note.} Chaque cellule comportait 504 essais au total. Les valeurs observées correspondent aux moyennes des taux individuels. Les valeurs prédites correspondent aux probabilités estimées par le modèle logistique mixte utilisé pour analyser le taux d’illusion : $illusion \sim type\_illusion \times SOA + (1\,|\,participant)$.
+\end{minipage}
+\end{table}

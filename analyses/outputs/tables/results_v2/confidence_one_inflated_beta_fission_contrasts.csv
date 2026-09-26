@@ -1,0 +1,3 @@
+contrast,soa_type,odds.ratio,SE,df,null,z.ratio,p.value,analysis,interpretation
+illusory / congruent,standard,2.0309970908654464,0.17660082215517145,Inf,1,8.14841037577991,3.6873918091012396e-16,2 flashs perçus,Positive estimate = higher uncertainty / lower confidence for illusory percepts
+illusory / congruent,short,1.289119052768238,0.0963052140809894,Inf,1,3.3994368021188266,6.75247827468154e-4,2 flashs perçus,Positive estimate = higher uncertainty / lower confidence for illusory percepts

@@ -1,0 +1,42 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: confidence ~ fusion_comparison + (1 | participant)
+   Data: df_fus_by_soa
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  12696.8   12723.9   -6343.4   12686.8      1654 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.9826 -0.3278  0.1629  0.5336  2.6750 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept)  94.37    9.714  
+ Residual                119.39   10.927  
+Number of obs: 1659, groups:  participant, 9
+
+Fixed effects:
+                                  Estimate Std. Error        df t value
+(Intercept)                        88.2025     3.2534    9.0434   27.11
+fusion_comparisonfusion_standard  -12.1286     1.1452 1651.5500  -10.59
+fusion_comparisonfusion_short      -6.4528     0.6865 1651.1018   -9.40
+                                 Pr(>|t|)    
+(Intercept)                      5.67e-10 ***
+fusion_comparisonfusion_standard  < 2e-16 ***
+fusion_comparisonfusion_short     < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+                 (Intr) fsn_cmprsnfsn_st
+fsn_cmprsnfsn_st -0.026                 
+fsn_cmprsnfsn_sh -0.043  0.153          
+
+Singular fit:
+[1] FALSE
+
+Variance components:
+ Groups      Name        Std.Dev.
+ participant (Intercept)  9.7144 
+ Residual                10.9267 

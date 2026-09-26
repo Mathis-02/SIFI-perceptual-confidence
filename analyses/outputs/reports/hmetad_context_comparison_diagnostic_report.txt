@@ -1,0 +1,26 @@
+HMeta-d — comparaison directe des contextes au SOA court
+========================================================
+
+Participants : 9
+Essais : 1296
+Essais par cellule et participant : 36
+
+Divergences : 0
+Rhat maximal : 1.0034
+ESS bulk minimal : 1699.0
+ESS tail minimal : 2707.5
+
+M physique moyen : 0.653
+M fission moyen : 0.367
+Ratio M fission / physique : 0.571
+P(M fission < M physique) : 0.982
+
+Interprétation :
+- ratio < 1 : efficacité métacognitive plus faible en contexte fission ;
+- ratio = 1 : efficacité comparable ;
+- ratio > 1 : efficacité plus élevée en contexte fission ;
+
+Limite conceptuelle :
+les contextes diffèrent aussi par leur stimulus S1.
+Le coefficient de contexte n'isole donc pas une connaissance pure
+de l'origine illusoire du percept.

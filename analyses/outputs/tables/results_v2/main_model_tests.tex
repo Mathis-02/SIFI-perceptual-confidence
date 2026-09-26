@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\caption{Tests du rapport de vraisemblance pour les modèles mixtes principaux.}
+\label{tab:main_model_tests_v2}
+\scriptsize
+\begin{tabular}{p{4.4cm}p{1.3cm}p{3.5cm}rrrrr}
+\toprule
+Analyse & Modèle & Effet testé & N & Essais & ddl LRT & $\chi^2$ & $p$ \\
+\midrule
+Réponse perceptive & GLMM & Condition & 9 & 5184 & 6 & 2732.76 & $< .001$ \\
+Confiance appariée : 2 flashs & LMM & Origine $\times$ SOA & 9 & 1722 & 1 & 29.66 & $< .001$ \\
+Confiance appariée : 1 flash & LMM & Condition de fusion & 9 & 1659 & 2 & 165.62 & $< .001$ \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.2cm}
+\begin{minipage}{0.96\textwidth}
+\footnotesize
+\textit{Note.} GLMM = modèle linéaire généralisé mixte binomial ; LMM = modèle linéaire mixte gaussien. Les effets ont été évalués par tests du rapport de vraisemblance comparant des modèles emboîtés. Les ddl LRT correspondent au nombre de paramètres ajoutés dans le modèle complet. Tous les modèles incluaient un intercept aléatoire par participant.
+\end{minipage}
+\end{table}

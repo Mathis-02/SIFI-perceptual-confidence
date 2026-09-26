@@ -1,0 +1,2 @@
+analysis,model,effect_tested,formula,N,n_obs,df,chi_square,p,p_formatted
+Response2 condition-cell manipulation check,Binomial GLMM,condition_cell,response2 ~ condition_cell + (1 | participant),9,5184,6,2732.76,0,< .001

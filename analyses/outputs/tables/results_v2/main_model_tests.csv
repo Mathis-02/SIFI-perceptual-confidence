@@ -1,0 +1,4 @@
+analysis,model,effect_tested,formula,N,n_obs,df,chi_square,p,p_formatted
+Perceptual response,Binomial GLMM,condition_cell,response2 ~ condition_cell + (1 | participant),9,5184,6,2732.76,0,< .001
+Matched confidence: fission,Gaussian LMM,percept_origin × SOA,confidence ~ percept_origin * SOA + (1 | participant),9,1722,1,29.66,5.154666817199284e-8,< .001
+Matched confidence: fusion,Gaussian LMM,fusion_comparison,confidence ~ fusion_comparison + (1 | participant),9,1659,2,165.62,1.0852070777251687e-36,< .001

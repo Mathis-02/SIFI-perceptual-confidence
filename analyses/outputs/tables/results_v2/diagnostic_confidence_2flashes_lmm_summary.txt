@@ -1,0 +1,45 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: confidence ~ percept_origin * soa_type + (1 | participant)
+   Data: df_fiss
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+  13187.5   13220.2   -6587.8   13175.5      1716 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.6961 -0.4244  0.3267  0.6212  1.9038 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept)  40.98    6.402  
+ Residual                120.50   10.977  
+Number of obs: 1722, groups:  participant, 9
+
+Fixed effects:
+                                      Estimate Std. Error        df t value
+(Intercept)                            92.3743     2.1778    9.4622   42.41
+percept_originillusory                 -8.7068     0.8697 1715.6369  -10.01
+soa_typeshort                          -7.4310     0.6429 1713.2315  -11.56
+percept_originillusory:soa_typeshort    6.3078     1.1533 1713.3281    5.47
+                                     Pr(>|t|)    
+(Intercept)                          4.08e-12 ***
+percept_originillusory                < 2e-16 ***
+soa_typeshort                         < 2e-16 ***
+percept_originillusory:soa_typeshort 5.18e-08 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) prcpt_ s_typs
+prcpt_rgnll -0.100              
+soa_typshrt -0.135  0.345       
+prcpt_rgn:_  0.075 -0.728 -0.556
+
+Singular fit:
+[1] FALSE
+
+Variance components:
+ Groups      Name        Std.Dev.
+ participant (Intercept)  6.4019 
+ Residual                10.9772 

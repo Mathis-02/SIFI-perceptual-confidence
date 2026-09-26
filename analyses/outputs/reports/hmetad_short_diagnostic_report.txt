@@ -1,0 +1,22 @@
+HMeta-d — SOA court
+===================
+
+Participants : 9
+Essais : 1296
+Méthode de discrétisation : participant_quantiles
+Nombre de catégories de confiance : 4
+
+Divergences : 0
+Rhat maximal : 1.0042
+ESS bulk minimal : 1521.1
+ESS tail minimal : 2148.4
+
+M-ratio moyen postérieur : 0.434
+IC crédible 95 % du M-ratio : [0.215, 0.715]
+P(M-ratio > 1) : 0.001
+
+Interprétation diagnostique recommandée :
+- aucune divergence ;
+- Rhat <= 1.01 ;
+- ESS suffisamment élevés ;
+- inspection visuelle des chaînes.

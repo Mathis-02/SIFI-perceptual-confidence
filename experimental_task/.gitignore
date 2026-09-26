@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# PsychoPy and operating-system files
+*.log
+*.psydat
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Participant data and generated summaries
+data/trials/*
+!data/trials/.gitkeep
+data/session_info/*
+!data/session_info/.gitkeep
+
+# Timing utility output
+tools/photodiode_test.csv

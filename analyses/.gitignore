@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local/private files
+private/
+linkage_key*
+participant_key*
+consent*/
+recruitment*/
+*.tmp
+~$*
+
+# Participant data
+data/trials/*
+!data/trials/.gitkeep
+data/processed/
+
+# Model-ready trial-level exports
+outputs/tables/models/model_subset_*.csv
+
+# Serialized fitted models
+outputs/models/
+*.rds

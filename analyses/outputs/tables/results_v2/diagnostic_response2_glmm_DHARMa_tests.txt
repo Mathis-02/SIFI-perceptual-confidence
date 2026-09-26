@@ -1,0 +1,28 @@
+
+	Asymptotic one-sample Kolmogorov-Smirnov test
+
+data:  simulationOutput$scaledResiduals
+D = 0.011244, p-value = 0.5287
+alternative hypothesis: two-sided
+
+
+	DHARMa nonparametric dispersion test via sd of residuals fitted vs.
+	simulated
+
+data:  simulationOutput
+dispersion = 1.0014, p-value = 0.934
+alternative hypothesis: two.sided
+
+
+	DHARMa outlier test based on exact binomial test with approximate
+	expectations
+
+data:  sim_resp
+outliers at both margin(s) = 14, observations = 5184, p-value = 0.2717
+alternative hypothesis: true probability of success is not equal to 0.001998002
+95 percent confidence interval:
+ 0.001477215 0.004527030
+sample estimates:
+frequency of outliers (expected: 0.001998001998002 ) 
+                                         0.002700617 
+

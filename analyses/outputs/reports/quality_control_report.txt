@@ -1,0 +1,16 @@
+QUALITY CONTROL REPORT
+======================
+
+Rows: 5184
+Participants: 9
+
+Generated tables:
+- outputs/tables/quality_control/trials_by_participant_condition_soa.csv
+- outputs/tables/quality_control/participant_global_quality_control.csv
+- outputs/tables/quality_control/matched_percept_confidence_trial_counts.csv
+
+Generated figures:
+- outputs/figures/quality_control/qc_block_evolution_illusion_group.pdf
+- outputs/figures/quality_control/qc_block_evolution_confidence_group.pdf
+
+Use these outputs as diagnostics/appendix material, not as primary confirmatory tests.

@@ -1,0 +1,72 @@
+============================================================
+ILLUSION : Fission 
+============================================================
+
+Tests du rapport de vraisemblance
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+           npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)  
+m_soa         3 1314.4 1329.9 -654.19    1308.4                       
+m_additive    4 1313.0 1333.7 -652.51    1305.0 3.3581  1    0.06688 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Data: data
+Models:
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+m_interaction: illusion ~ block_c * soa_type + (1 | participant)
+              npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_additive       4 1313.0 1333.7 -652.51    1305.0                     
+m_interaction    5 1314.7 1340.5 -652.35    1304.7 0.3119  1     0.5765
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_block_factor: illusion ~ factor(block) + soa_type + (1 | participant)
+               npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa             3 1314.4 1329.9 -654.19    1308.4                     
+m_block_factor   10 1320.4 1372.1 -650.21    1300.4 7.9581  7     0.3363
+
+Pentes du bloc par SOA
+# A tibble: 2 × 9
+  soa_type     block_c.trend     SE    df asymp.LCL asymp.UCL z.ratio p.value
+  <fct>                <dbl>  <dbl> <dbl>     <dbl>     <dbl>   <dbl>   <dbl>
+1 SOA standard       -0.0733 0.0442   Inf    -0.160    0.0134  -1.66   0.0975
+2 SOA court          -0.0395 0.0409   Inf    -0.120    0.0407  -0.965  0.334 
+# ℹ 1 more variable: type_illusion <chr>
+============================================================
+ILLUSION : Fusion 
+============================================================
+
+Tests du rapport de vraisemblance
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+           npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa         3 1202.6 1218.1 -598.28    1196.6                     
+m_additive    4 1203.6 1224.3 -597.82    1195.6 0.9345  1     0.3337
+Data: data
+Models:
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+m_interaction: illusion ~ block_c * soa_type + (1 | participant)
+              npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)  
+m_additive       4 1203.6 1224.3 -597.82    1195.6                       
+m_interaction    5 1202.0 1227.8 -596.01    1192.0 3.6197  1     0.0571 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_block_factor: illusion ~ factor(block) + soa_type + (1 | participant)
+               npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa             3 1202.6 1218.1 -598.28    1196.6                     
+m_block_factor   10 1209.0 1260.7 -594.51    1189.0 7.5449  7     0.3744
+
+Pentes du bloc par SOA
+# A tibble: 2 × 9
+  soa_type     block_c.trend     SE    df asymp.LCL asymp.UCL z.ratio p.value
+  <fct>                <dbl>  <dbl> <dbl>     <dbl>     <dbl>   <dbl>   <dbl>
+1 SOA standard       -0.109  0.0523   Inf   -0.211   -0.00651  -2.08   0.0371
+2 SOA court           0.0161 0.0401   Inf   -0.0624   0.0947    0.402  0.687 
+# ℹ 1 more variable: type_illusion <chr>

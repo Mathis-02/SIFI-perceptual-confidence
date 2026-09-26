@@ -1,0 +1,3 @@
+analysis,model,effect_tested,formula,N,n_obs,df,chi_square,p,p_formatted
+ZIB uncertainty / one-inflated confidence: 2 flashs perçus,Zero-inflated beta mixed model,percept_origin × SOA,"uncertainty_beta ~ percept_origin * SOA + (1 | participant), ziformula = ~1",9,1722,7,16.52,4.81586119782951e-5,< .001
+ZIB uncertainty / one-inflated confidence: 1 flash perçu,Zero-inflated beta mixed model,fusion_comparison,"uncertainty_beta ~ fusion_comparison + (1 | participant), ziformula = ~1",9,1659,6,111,7.883024145036077e-25,< .001

@@ -1,0 +1,60 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: response2 ~ condition_cell + (1 | participant)
+   Data: df_resp_cell
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   4400.3    4452.7   -2192.1    4384.3      5176 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-10.0560  -0.4498   0.0994   0.3746   5.2950 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 0.2346   0.4844  
+Number of obs: 5184, groups:  participant, 9
+
+Fixed effects:
+                                 Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                       -2.7856     0.1985  -14.04   <2e-16 ***
+condition_cellA1V1_A2_standard     2.1423     0.1423   15.06   <2e-16 ***
+condition_cellA1V1_A2_short        2.7190     0.1407   19.33   <2e-16 ***
+condition_cellA1V1_A2V2_standard   6.9702     0.3275   21.28   <2e-16 ***
+condition_cellA1V1_A2V2_short      4.4857     0.1596   28.10   <2e-16 ***
+condition_cellA1V1_V2_standard     4.4857     0.1597   28.09   <2e-16 ***
+condition_cellA1V1_V2_short        2.6864     0.1407   19.10   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+                      (Intr) cndtn_cllA1V1_A2_st cndtn_cllA1V1_A2_sh
+cndtn_cllA1V1_A2_st   -0.469                                        
+cndtn_cllA1V1_A2_sh   -0.476  0.660                                 
+cndtn_cllA1V1_A2V2_st -0.209  0.287               0.293             
+cndtn_cllA1V1_A2V2_sh -0.426  0.586               0.598             
+cndtn_cllA1V1_V2_st   -0.426  0.586               0.598             
+cndtn_cllA1V1_V2_sh   -0.476  0.660               0.670             
+                      cndtn_cllA1V1_A2V2_st cndtn_cllA1V1_A2V2_sh
+cndtn_cllA1V1_A2_st                                              
+cndtn_cllA1V1_A2_sh                                              
+cndtn_cllA1V1_A2V2_st                                            
+cndtn_cllA1V1_A2V2_sh  0.269                                     
+cndtn_cllA1V1_V2_st    0.269                 0.543               
+cndtn_cllA1V1_V2_sh    0.293                 0.598               
+                      cndtn_cllA1V1_V2_st
+cndtn_cllA1V1_A2_st                      
+cndtn_cllA1V1_A2_sh                      
+cndtn_cllA1V1_A2V2_st                    
+cndtn_cllA1V1_A2V2_sh                    
+cndtn_cllA1V1_V2_st                      
+cndtn_cllA1V1_V2_sh    0.598             
+
+Singular fit:
+[1] FALSE
+
+Variance components:
+ Groups      Name        Std.Dev.
+ participant (Intercept) 0.48438 

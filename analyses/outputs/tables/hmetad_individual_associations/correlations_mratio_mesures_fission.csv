@@ -1,0 +1,9 @@
+outcome,soa,n,rho,p_value
+Taux de fission,SOA regroupés,9,-0.65,0.0580730580171487
+Taux de fission,SOA standard,9,-0.5020964452534338,0.16839743464432014
+Taux de fission,SOA court,9,-0.5,0.17047066078705375
+Confiance associée aux fissions,SOA regroupés,9,-0.5,0.17047066078705375
+Confiance associée aux fissions,SOA standard,9,-0.43333333333333335,0.2439524358800516
+Confiance associée aux fissions,SOA court,9,-0.4666666666666667,0.205386351105812
+Contraste de confiance illusoire - congruente,SOA standard,9,-0.3333333333333333,0.3807131816768637
+Contraste de confiance illusoire - congruente,SOA court,9,-0.3333333333333333,0.3807131816768637

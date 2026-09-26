@@ -1,0 +1,17 @@
+Corrélations entre taux de réponse « 2 flashs » dans A1V1_A2V2
+et taux d'illusion de fission dans A1V1_A2
+
+# A tibble: 6 × 6
+  analyse       methode      n estimation statistique p_value
+  <fct>         <chr>    <int>      <dbl>       <dbl>   <dbl>
+1 SOA regroupés Spearman     9     0.517       58      0.154 
+2 SOA regroupés Pearson      9     0.572        1.85   0.107 
+3 SOA standard  Spearman     9     0.0757     111.     0.847 
+4 SOA standard  Pearson      9     0.170        0.456  0.662 
+5 SOA court     Spearman     9     0.711       34.6    0.0317
+6 SOA court     Pearson      9     0.680        2.46   0.0438
+
+Interprétation : une corrélation positive indique que les participants
+qui répondent plus souvent « 2 flashs » lorsque deux flashs sont réellement
+présentés rapportent aussi davantage de fissions. Cette relation peut toutefois
+refléter un biais général vers la réponse « 2 flashs ».

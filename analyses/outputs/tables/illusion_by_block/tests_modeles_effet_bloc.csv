@@ -1,0 +1,7 @@
+type_illusion,test,chi_square,ddl,p_value
+Fission,Effet linéaire du bloc,3.3580819492149203,1,0.06687591801825897
+Fission,Interaction bloc × SOA,0.3118617601871847,1,0.5765399757308767
+Fission,Effet omnibus du bloc,7.958130949347378,7,0.3363003667094434
+Fusion,Effet linéaire du bloc,0.93448120896619,1,0.333701186588112
+Fusion,Interaction bloc × SOA,3.6197499819534187,1,0.05709745323099594
+Fusion,Effet omnibus du bloc,7.544857053686201,7,0.3744309505050897

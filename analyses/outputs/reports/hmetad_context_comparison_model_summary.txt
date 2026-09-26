@@ -1,0 +1,81 @@
+ Family: metad__4__normal__absolute__multinomial 
+  Links: mu = log; dprime = identity; c = identity; metac2zero1diff = log; metac2zero2diff = log; metac2zero3diff = log; metac2one1diff = log; metac2one2diff = log; metac2one3diff = log 
+Formula: N ~ context + (1 || participant) 
+         dprime ~ context + (1 || participant)
+         c ~ context + (1 || participant)
+         metac2zero1diff ~ context + (1 || participant)
+         metac2zero2diff ~ context + (1 || participant)
+         metac2zero3diff ~ context + (1 || participant)
+         metac2one1diff ~ context + (1 || participant)
+         metac2one2diff ~ context + (1 || participant)
+         metac2one3diff ~ context + (1 || participant)
+   Data: data.aggregated (Number of observations: 18) 
+  Draws: 4 chains, each with iter = 5000; warmup = 2500; thin = 1;
+         total post-warmup draws = 10000
+
+Multilevel Hyperparameters:
+~participant (Number of levels: 9) 
+                              Estimate Est.Error l-95% CI u-95% CI Rhat
+sd(Intercept)                     0.42      0.17     0.15     0.83 1.00
+sd(dprime_Intercept)              0.50      0.21     0.19     1.02 1.00
+sd(c_Intercept)                   0.64      0.21     0.36     1.15 1.00
+sd(metac2zero1diff_Intercept)     0.51      0.20     0.23     1.00 1.00
+sd(metac2zero2diff_Intercept)     0.51      0.21     0.20     1.04 1.00
+sd(metac2zero3diff_Intercept)     0.13      0.12     0.00     0.42 1.00
+sd(metac2one1diff_Intercept)      0.36      0.18     0.08     0.77 1.00
+sd(metac2one2diff_Intercept)      0.61      0.24     0.28     1.21 1.00
+sd(metac2one3diff_Intercept)      0.39      0.16     0.17     0.79 1.00
+                              Bulk_ESS Tail_ESS
+sd(Intercept)                     5298     5030
+sd(dprime_Intercept)              3322     4381
+sd(c_Intercept)                   3231     5578
+sd(metac2zero1diff_Intercept)     4306     6730
+sd(metac2zero2diff_Intercept)     3596     4241
+sd(metac2zero3diff_Intercept)     5230     5044
+sd(metac2one1diff_Intercept)      3067     2707
+sd(metac2one2diff_Intercept)      3313     6018
+sd(metac2one3diff_Intercept)      3984     5812
+
+Regression Coefficients:
+                               Estimate Est.Error l-95% CI u-95% CI Rhat
+Intercept                         -0.45      0.20    -0.88    -0.08 1.00
+dprime_Intercept                   2.63      0.23     2.18     3.11 1.00
+c_Intercept                        0.24      0.24    -0.23     0.71 1.00
+metac2zero1diff_Intercept         -0.74      0.22    -1.19    -0.32 1.00
+metac2zero2diff_Intercept         -0.97      0.23    -1.45    -0.54 1.00
+metac2zero3diff_Intercept         -0.51      0.13    -0.76    -0.27 1.00
+metac2one1diff_Intercept          -0.83      0.19    -1.21    -0.47 1.00
+metac2one2diff_Intercept          -1.08      0.25    -1.59    -0.60 1.00
+metac2one3diff_Intercept          -0.30      0.17    -0.65     0.03 1.00
+contextFission                    -0.60      0.30    -1.23    -0.04 1.00
+dprime_contextFission             -1.48      0.17    -1.82    -1.15 1.00
+c_contextFission                  -0.74      0.09    -0.91    -0.57 1.00
+metac2zero1diff_contextFission     0.04      0.16    -0.28     0.36 1.00
+metac2zero2diff_contextFission     0.23      0.18    -0.13     0.59 1.00
+metac2zero3diff_contextFission     0.11      0.18    -0.25     0.47 1.00
+metac2one1diff_contextFission      0.11      0.16    -0.20     0.41 1.00
+metac2one2diff_contextFission      0.25      0.16    -0.05     0.56 1.00
+metac2one3diff_contextFission     -0.04      0.13    -0.29     0.21 1.00
+                               Bulk_ESS Tail_ESS
+Intercept                          7388     7294
+dprime_Intercept                   5372     5350
+c_Intercept                        2352     4362
+metac2zero1diff_Intercept          4105     5329
+metac2zero2diff_Intercept          5104     5842
+metac2zero3diff_Intercept         12494     6909
+metac2one1diff_Intercept           5338     6000
+metac2one2diff_Intercept           3487     5087
+metac2one3diff_Intercept           4819     5520
+contextFission                     9144     7083
+dprime_contextFission             15888     7054
+c_contextFission                  10579     7977
+metac2zero1diff_contextFission    11148     7597
+metac2zero2diff_contextFission    15462     8184
+metac2zero3diff_contextFission    14812     7788
+metac2one1diff_contextFission     11608     6867
+metac2one2diff_contextFission     14106     7852
+metac2one3diff_contextFission     16482     7636
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).

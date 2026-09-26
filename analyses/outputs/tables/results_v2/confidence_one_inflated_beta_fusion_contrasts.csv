@@ -1,0 +1,3 @@
+contrast,odds.ratio,SE,df,null,z.ratio,p.value,analysis,interpretation
+fusion_standard / congruent_A1V1,3.0222497637546497,0.3717522639585382,Inf,1,8.99150623451912,2.4386505592421253e-19,1 flash perçu,Positive estimate = higher uncertainty / lower confidence for illusory percepts
+fusion_short / congruent_A1V1,1.6701703782532604,0.11636055828140686,Inf,1,7.362230206922823,1.8086271114836262e-13,1 flash perçu,Positive estimate = higher uncertainty / lower confidence for illusory percepts

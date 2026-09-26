@@ -1,0 +1,292 @@
+============================================================
+ILLUSION : Fission 
+============================================================
+
+Modèle sans bloc
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1314.4    1329.9    -654.2    1308.4      1293 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-8.3285 -0.5445 -0.3144  0.7763  3.3831 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 3.219    1.794   
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        -0.6595     0.6092  -1.083    0.279    
+soa_typeSOA court   0.8047     0.1393   5.777 7.62e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+s_typSOAcrt -0.121
+
+Modèle avec effet linéaire du bloc
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ block_c + soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1313.0    1333.7    -652.5    1305.0      1292 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-7.6022 -0.5821 -0.3155  0.7239  3.6382 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 3.236    1.799   
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -0.66195    0.61091  -1.084   0.2786    
+block_c           -0.05512    0.03005  -1.834   0.0666 .  
+soa_typeSOA court  0.80727    0.13955   5.785 7.26e-09 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) blck_c
+block_c      0.004       
+s_typSOAcrt -0.121 -0.020
+
+Modèle avec interaction bloc × SOA
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ block_c * soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1314.7    1340.5    -652.4    1304.7      1291 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-7.8293 -0.5734 -0.3164  0.7312  3.7245 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 3.24     1.8     
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                          Estimate Std. Error z value Pr(>|z|)    
+(Intercept)               -0.66326    0.61128  -1.085   0.2779    
+block_c                   -0.07325    0.04421  -1.657   0.0975 .  
+soa_typeSOA court          0.80941    0.13966   5.795 6.82e-09 ***
+block_c:soa_typeSOA court  0.03372    0.06022   0.560   0.5755    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) blck_c s_SOAc
+block_c      0.007              
+s_typSOAcrt -0.121 -0.041       
+blck_:_SOAc -0.005 -0.733  0.031
+
+Tests du rapport de vraisemblance
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+           npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)  
+m_soa         3 1314.4 1329.9 -654.19    1308.4                       
+m_additive    4 1313.0 1333.7 -652.51    1305.0 3.3581  1    0.06688 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Data: data
+Models:
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+m_interaction: illusion ~ block_c * soa_type + (1 | participant)
+              npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_additive       4 1313.0 1333.7 -652.51    1305.0                     
+m_interaction    5 1314.7 1340.5 -652.35    1304.7 0.3119  1     0.5765
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_block_factor: illusion ~ factor(block) + soa_type + (1 | participant)
+               npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa             3 1314.4 1329.9 -654.19    1308.4                     
+m_block_factor   10 1320.4 1372.1 -650.21    1300.4 7.9581  7     0.3363
+
+Pentes du bloc par SOA
+# A tibble: 2 × 7
+  soa_type     block_c.trend     SE    df asymp.LCL asymp.UCL illusion_type
+  <fct>                <dbl>  <dbl> <dbl>     <dbl>     <dbl> <chr>        
+1 SOA standard       -0.0733 0.0442   Inf    -0.160    0.0134 Fission      
+2 SOA court          -0.0395 0.0409   Inf    -0.120    0.0407 Fission      
+
+Comparaison des pentes entre SOA
+# A tibble: 1 × 8
+  contrast       estimate     SE    df z.ratio p.value illusion_type result_type
+  <chr>             <dbl>  <dbl> <dbl>   <dbl>   <dbl> <chr>         <chr>      
+1 SOA standard …  -0.0337 0.0602   Inf  -0.560   0.576 Fission       Différence…
+
+Singularité des modèles
+m_soa : FALSE 
+m_additive : FALSE 
+m_interaction : FALSE 
+m_block_factor : FALSE 
+============================================================
+ILLUSION : Fusion 
+============================================================
+
+Modèle sans bloc
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1202.6    1218.1    -598.3    1196.6      1293 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5595 -0.5041 -0.2276  0.6415  5.1702 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 1.969    1.403   
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)        -2.1615     0.4868   -4.44 8.99e-06 ***
+soa_typeSOA court   2.2581     0.1637   13.79  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+s_typSOAcrt -0.223
+
+Modèle avec effet linéaire du bloc
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ block_c + soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1203.6    1224.3    -597.8    1195.6      1292 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7602 -0.5315 -0.2380  0.6077  5.3805 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 1.972    1.404   
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                  Estimate Std. Error z value Pr(>|z|)    
+(Intercept)       -2.16347    0.48735  -4.439 9.03e-06 ***
+block_c           -0.03065    0.03167  -0.968    0.333    
+soa_typeSOA court  2.26025    0.16382  13.797  < 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) blck_c
+block_c      0.008       
+s_typSOAcrt -0.223 -0.027
+
+Modèle avec interaction bloc × SOA
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: illusion ~ block_c * soa_type + (1 | participant)
+   Data: data
+Control: glmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05))
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1202.0    1227.8    -596.0    1192.0      1291 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6655 -0.5419 -0.2319  0.6234  5.9868 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ participant (Intercept) 1.983    1.408   
+Number of obs: 1296, groups:  participant, 9
+
+Fixed effects:
+                          Estimate Std. Error z value Pr(>|z|)    
+(Intercept)               -2.17920    0.48884  -4.458 8.28e-06 ***
+block_c                   -0.10896    0.05227  -2.085   0.0371 *  
+soa_typeSOA court          2.27716    0.16504  13.797  < 2e-16 ***
+block_c:soa_typeSOA court  0.12508    0.06588   1.899   0.0576 .  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr) blck_c s_SOAc
+block_c      0.034              
+s_typSOAcrt -0.225 -0.109       
+blck_:_SOAc -0.028 -0.794  0.090
+
+Tests du rapport de vraisemblance
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+           npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa         3 1202.6 1218.1 -598.28    1196.6                     
+m_additive    4 1203.6 1224.3 -597.82    1195.6 0.9345  1     0.3337
+Data: data
+Models:
+m_additive: illusion ~ block_c + soa_type + (1 | participant)
+m_interaction: illusion ~ block_c * soa_type + (1 | participant)
+              npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)  
+m_additive       4 1203.6 1224.3 -597.82    1195.6                       
+m_interaction    5 1202.0 1227.8 -596.01    1192.0 3.6197  1     0.0571 .
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Data: data
+Models:
+m_soa: illusion ~ soa_type + (1 | participant)
+m_block_factor: illusion ~ factor(block) + soa_type + (1 | participant)
+               npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)
+m_soa             3 1202.6 1218.1 -598.28    1196.6                     
+m_block_factor   10 1209.0 1260.7 -594.51    1189.0 7.5449  7     0.3744
+
+Pentes du bloc par SOA
+# A tibble: 2 × 7
+  soa_type     block_c.trend     SE    df asymp.LCL asymp.UCL illusion_type
+  <fct>                <dbl>  <dbl> <dbl>     <dbl>     <dbl> <chr>        
+1 SOA standard       -0.109  0.0523   Inf   -0.211   -0.00651 Fusion       
+2 SOA court           0.0161 0.0401   Inf   -0.0624   0.0947  Fusion       
+
+Comparaison des pentes entre SOA
+# A tibble: 1 × 8
+  contrast       estimate     SE    df z.ratio p.value illusion_type result_type
+  <chr>             <dbl>  <dbl> <dbl>   <dbl>   <dbl> <chr>         <chr>      
+1 SOA standard …   -0.125 0.0659   Inf   -1.90  0.0576 Fusion        Différence…
+
+Singularité des modèles
+m_soa : FALSE 
+m_additive : FALSE 
+m_interaction : FALSE 
+m_block_factor : FALSE 

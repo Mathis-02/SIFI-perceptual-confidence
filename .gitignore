@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# PsychoPy generated data
+experimental_task/data/trials/*
+!experimental_task/data/trials/.gitkeep
+
+experimental_task/data/session_info/*
+!experimental_task/data/session_info/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip*.zip
+*.tar
+*.tar.gz

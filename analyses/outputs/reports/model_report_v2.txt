@@ -1,0 +1,22 @@
+SIFI multisensory participant study - v2 inferential outputs
+=================================================
+
+Main models:
+1. response2 ~ condition_cell + (1 | participant)
+2. confidence ~ percept_origin * SOA + (1 | participant) for fission matched percepts
+3. confidence ~ fusion_comparison + (1 | participant) for fusion matched percepts
+
+response2 is exported as a descriptive/manipulation-check output, not as a central inferential model.
+Secondary SOA tests within illusory confidence trials are exported separately.
+
+Output directory: ./outputs/tables/results_v2
+
+Generated files:
+- main_model_tests.csv / .tex
+- table_illusion_descriptives.csv / .tex
+- matched_percept_confidence_contrasts.csv / .tex
+- matched_percept_confidence_trial_counts.csv / .tex
+- secondary_illusory_confidence_soa_tests.csv / .tex
+- perceptual_response_planned_contrasts.csv / .tex
+- response2_condition_cell_descriptives.csv
+- response2_condition_cell_LRT_control.csv
