@@ -409,7 +409,11 @@ diagnostic_report <- c(
   ),
   "",
   "Interprétation diagnostique recommandée :",
-  "- aucune divergence ;",
+  if (n_divergent == 0) {
+    "- aucune divergence ;"
+  } else {
+    paste0("- ", n_divergent, " transition(s) divergente(s) détectée(s) ;")
+  },
   "- Rhat <= 1.01 ;",
   "- ESS suffisamment élevés ;",
   "- inspection visuelle des chaînes."

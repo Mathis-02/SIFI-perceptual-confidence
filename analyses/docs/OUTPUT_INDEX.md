@@ -14,10 +14,6 @@
 - `outputs/figures/diagnostics/`
 - `outputs/reports/quality_control_report.txt`
 
-## Exploratory and backup outputs
+## Exploratory outputs
 
-- `outputs/figures/backup/`
-- `outputs/tables/correlations/`
-- `outputs/tables/illusion_by_block/`
-- `outputs/tables/confidence_by_block/`
-- `outputs/tables/hmetad_individual_associations/`
+Selected exploratory outputs are retained for participant-level correlations and block analyses. Some additional exploratory outputs generated during development, including individual M-ratio association outputs, are not distributed publicly.

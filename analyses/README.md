@@ -239,7 +239,6 @@ All analysis scripts should be run from the `analyses/` directory so that relati
 * The original trial files remained unchanged during the analysis.
 * Python source files compiled successfully.
 * Generated cache directories were removed.
-* Analysis scripts and technical comments were written in English.
 * Manuscript-facing figure and table labels may remain in French.
 * Confidence figures not used in the submitted thesis were removed.
 

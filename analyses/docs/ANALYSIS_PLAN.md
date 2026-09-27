@@ -24,10 +24,11 @@ Fixed effects are tested with likelihood-ratio tests between nested maximum-like
 ## Supplementary hierarchical meta-d analyses
 
 - Short-SOA fission discrimination.
-- Congruent physical reference discrimination.
 - Common-model comparison of physical and fission contexts.
 
 These analyses estimate d-prime, meta-d-prime, decision criteria, confidence criteria, and M-ratio. The context comparison is informative but does not isolate percept origin perfectly because the S1 stimulus differs between contexts.
+
+Historical outputs are retained for a congruent physical reference analysis, but its original implementation is no longer available. Its retained diagnostic report records 19 divergent NUTS transitions.
 
 ## Exploratory analyses
 

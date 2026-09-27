@@ -21,6 +21,6 @@ experimental_task/data/session_info/*
 Thumbs.db
 
 # Archives
-*.zip*.zip
+*.zip
 *.tar
 *.tar.gz

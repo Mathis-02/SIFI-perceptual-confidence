@@ -2,7 +2,7 @@
 
 This repository contains the PsychoPy acquisition task used to study fission and fusion variants of the sound-induced flash illusion and the confidence judgments associated with each perceptual report.
 
-The repository contains acquisition and quality-control code only. Inferential statistics, figures, signal-detection analyses, and metacognitive analyses are intentionally maintained in a separate analysis project.
+The `experimental_task/` directory contains acquisition and quality-control code. Inferential statistics, figures, signal-detection analyses, and metacognitive analyses are maintained separately in the sibling `analyses/` directory.
 
 ## Experimental designs
 
