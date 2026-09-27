@@ -1,6 +1,6 @@
 # ============================================================
 # Trial-level block analysis of fission and fusion illusion rates, with participant trajectories and group summaries.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

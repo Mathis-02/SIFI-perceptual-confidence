@@ -291,7 +291,7 @@ Changes to trial counts should be validated in a short test session before data 
 
 ## Running the experiment
 
-Review `config.py`, then start the task from the repository root.
+From the `experimental_task/` directory, review `config.py`, then start the task:
 
 ```bash
 python main.py
@@ -336,7 +336,7 @@ Additional utilities are stored in `tools/`.
 - `demo_obs_fullscreen.py` presents a windowed demonstration of the four audiovisual structures.
 - `test_photodiode.py` supports external timing validation with a photodiode and oscilloscope.
 
-Run a utility from the repository root, for example:
+From the `experimental_task/` directory, run a utility, for example:
 
 ```bash
 python tools/test_photodiode.py
@@ -350,7 +350,7 @@ The test suite validates the three experimental designs, seeded sequence compati
 python -m unittest discover -s tests -v
 ```
 
-Automated tests do not replace validation on the acquisition computer. Before collecting new data, complete the hardware checks described in `VALIDATION.md`.
+Automated tests do not replace validation on the acquisition computer. Hardware timing, display, and audio should be checked on the acquisition computer before collecting new data.
 
 ## Project structure
 
@@ -370,6 +370,5 @@ Automated tests do not replace validation on the acquisition computer. Before co
 * `tests/` contains automated tests for the experimental designs, randomization constraints, timing conversions, CSV structure, and session summaries.
 * `data/trials/` receives the raw trial-level CSV files.
 * `data/session_info/` receives session metadata and descriptive quality-control summaries.
-* `VALIDATION.md` describes the software and hardware checks required before data collection.
 
 

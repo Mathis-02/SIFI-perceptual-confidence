@@ -1,6 +1,6 @@
 # ============================================================
 # Exploratory associations between individual posterior M-ratios and fission-related outcomes.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

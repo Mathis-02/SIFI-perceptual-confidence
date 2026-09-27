@@ -1,6 +1,6 @@
 # ============================================================
 # Hierarchical meta-d analysis for the short-SOA fission discrimination.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

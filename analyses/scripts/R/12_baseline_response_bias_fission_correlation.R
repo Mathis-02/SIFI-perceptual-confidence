@@ -1,6 +1,6 @@
 # ============================================================
 # Participant-level association between baseline two-flash false alarms and fission rates.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

@@ -16,8 +16,8 @@ M-ratio moyen postérieur : 0.661
 IC crédible 95 % du M-ratio : [0.440, 0.914]
 P(M-ratio > 1) : 0.008
 
-Interprétation diagnostique recommandée :
-- aucune divergence ;
+Interprétation diagnostique :
+- 19 transitions divergentes ont été détectées ;
 - Rhat <= 1.01 ;
 - ESS suffisamment élevés ;
-- inspection visuelle des chaînes.
+- les divergences indiquent que les diagnostics d'échantillonnage ne sont pas entièrement satisfaisants.

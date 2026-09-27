@@ -1,6 +1,6 @@
 # ============================================================
 # Participant-level association between correct two-flash reports and fission rates.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

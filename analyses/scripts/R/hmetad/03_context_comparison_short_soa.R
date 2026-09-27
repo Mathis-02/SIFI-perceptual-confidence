@@ -1,6 +1,6 @@
 # ============================================================
 # Direct hierarchical comparison of metacognitive efficiency across physical and fission contexts at the short SOA.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

@@ -1,6 +1,6 @@
 # ============================================================
 # One-inflated beta sensitivity analysis for bounded confidence ratings.
-# Run from the repository root unless stated otherwise.
+# Run from the analyses/ directory.
 # ============================================================
 
 suppressPackageStartupMessages({

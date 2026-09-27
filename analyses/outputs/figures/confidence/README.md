@@ -4,7 +4,7 @@ This directory intentionally contains only the confidence figure included in the
 
 - `03_confidence_composite_abcd.pdf`: four-panel confidence figure used in the manuscript.
 
-Regenerate it from the repository root with:
+Regenerate it from the `analyses/` directory with:
 
 ```bash
 python scripts/03_confidence_descriptives.py

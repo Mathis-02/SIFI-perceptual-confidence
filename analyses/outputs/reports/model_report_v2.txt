@@ -13,7 +13,6 @@ Output directory: ./outputs/tables/results_v2
 
 Generated files:
 - main_model_tests.csv / .tex
-- table_illusion_descriptives.csv / .tex
 - matched_percept_confidence_contrasts.csv / .tex
 - matched_percept_confidence_trial_counts.csv / .tex
 - secondary_illusory_confidence_soa_tests.csv / .tex

@@ -1,6 +1,6 @@
 # ============================================================
 # Install the R packages required by the SIFI analysis pipeline.
-# Run once from the repository root.
+# Run once from the analyses/ directory.
 # ============================================================
 
 cran_packages <- c(

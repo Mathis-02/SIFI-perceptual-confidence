@@ -19,7 +19,7 @@ All HMeta-d scripts are grouped in [`hmetad/`](hmetad/):
 | Script | Role |
 |---|---|
 | `hmetad/01_fission_short_soa.R` | Short-SOA fission HMeta-d |
-| `hmetad/02_congruent_baseline.R` | Congruent reference HMeta-d |
+| `hmetad/02_congruent_baseline.R` | Historical congruent reference; original implementation unavailable |
 | `hmetad/03_context_comparison_short_soa.R` | Direct context comparison in one hierarchical model |
 | `hmetad/04_individual_mratio_associations.R` | Individual M-ratio associations and leave-one-out checks |
 

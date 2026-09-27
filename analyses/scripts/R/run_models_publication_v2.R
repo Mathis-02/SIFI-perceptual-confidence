@@ -1,14 +1,7 @@
-# ============================================================
-# Publication-oriented inferential tables for the SIFI participant study - v2
-# ============================================================
 # Main logic:
-# 1. Perceptual primary model: illusion ~ illusion_type * SOA
+# 1. Perceptual responses: response2 ~ condition_cell
 # 2. Matched-confidence fission model: confidence ~ percept_origin * SOA
 # 3. Matched-confidence fusion model: confidence ~ fusion_comparison
-#
-# response2 is kept as descriptive / manipulation-check output, not as a
-# central inferential model in the main results table.
-# ============================================================
 
 suppressPackageStartupMessages({
   library(readr)
@@ -1085,7 +1078,6 @@ report_lines <- c(
   "",
   "Generated files:",
   "- main_model_tests.csv / .tex",
-  "- table_illusion_descriptives.csv / .tex",
   "- matched_percept_confidence_contrasts.csv / .tex",
   "- matched_percept_confidence_trial_counts.csv / .tex",
   "- secondary_illusory_confidence_soa_tests.csv / .tex",
