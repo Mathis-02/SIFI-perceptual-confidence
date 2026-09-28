@@ -4,6 +4,8 @@ This repository contains the experimental task and analysis pipeline developed d
 
 The project investigated whether perceptual confidence depends not only on what is perceived, but also on whether the percept is physically presented or induced by multisensory integration. I used the sound-induced flash illusion (SIFI) to compare confidence for matched physical and illusory percepts.
 
+The full Master's thesis is available in French: [Master's thesis (PDF)](master_thesis_FR.pdf)
+
 ## Experiment
 
 The final experiment combined fission and fusion variants of the SIFI at two audiovisual stimulus onset asynchronies (SOAs):
